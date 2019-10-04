@@ -1,0 +1,20 @@
+{
+  "name": "rotaract",
+  "version": "1.0.0",
+  "description": "an rotaract website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shivam agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.10",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.2.1"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />     
+    <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    
+    <style>
+      #HR{
+          visibility: hidden;
+      }
+      </style>
+      <style type="text/css">
+html {
+      overflow-x:hidden ;
+}
+</style>
+    <body>
+            <% for(var j=0;j<4;j++){ %>
+                    <li class="gallery_item"><a href="#popup1" class="gallery_link button"><img src="//placehold.it/200x200/b86614/ffffff" alt="" class="thumbnail" /></a></li>
+                        
+                    <div id="popup1" class="overlay">
+                       <div class="popup">
+                         <h2><%=tee[j].namet%></h2>
+                         <a class="close" href="#">&times;</a>
+                         <div class="content">
+                          <%=tee[j].textt%>
+                         </div>
+                         <div class="rows">
+                           <div class="column78">
+                             <img src="<%=tee[j].imagei1%>">
+                             </div>
+                             <div class="column78">
+                                 <img src="<%=tee[j].imagei2%>">
+                                 </div>
+                                 <div class="column78">
+                                     <img src="<%=tee[j].imagei3%>">
+                                     </div>
+                                     <div class="column78">
+                                         <img src="<%=tee[j].imagei4%>">
+                                         </div>
+                           </div>
+                       </div>          
+                       </div> 
+                                   <%}%>
+                     </ul>
+                     </div>
+             
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        </body>
+        
+        </html>
+        </html>

@@ -1,0 +1,2232 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+.home_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  /* line 11, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .navbar-brand {
+    padding: 0rem !important;
+  }
+  
+  @media (max-width: 576px) {
+    /* line 11, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .navbar-brand {
+      max-width: 120px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 11, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .navbar-brand {
+      max-width: 130px;
+    }
+  }
+  
+  /* line 23, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .navbar-toggler {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+
+  /* line 40, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .navbar {
+    padding: 0;
+  }
+  
+  @media (max-width: 576px) {
+    /* line 40, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .navbar {
+      padding: 15px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 40, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .navbar {
+      padding: 15px 0;
+    }
+  }
+  
+  /* line 52, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .main-menu-item {
+    text-align: right;
+    justify-content: right;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 52, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .main-menu-item {
+      padding-left: 25px;
+    }
+  }
+  
+  /* line 61, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .main-menu-item ul li .nav-link {
+    color: #fff;
+    font-size: 16px;
+    padding: 40px 25px;
+    font-family: "Roboto", sans-serif;
+    line-height: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-top: 2px solid transparent;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 61, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .main-menu-item ul li .nav-link {
+      padding: 35px 16px;
+    }
+  }
+  
+  /* line 74, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .main-menu-item ul li .nav-link:hover {
+    border-top: 2px solid #fff;
+    color: #fff;
+  }
+  
+  /* line 84, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .btn_2 {
+    padding: 10.5px 39px;
+    margin-left: 55px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  
+  /* line 90, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .main_menu .btn_2:hover {
+    border: 1px solid transparent;
+  }
+  
+  /* line 97, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .dropdown-menu {
+    border: 0px solid rgba(0, 0, 0, 0.15) !important;
+    background-color: #fafafa;
+  }
+  
+  /* line 103, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .dropdown .dropdown-menu {
+    transition: all 0.5s;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scale(1, 0);
+    display: block;
+    margin-top: -1px;
+  }
+  
+  /* line 110, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .dropdown .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 9px 18px !important;
+    color: #000 !important;
+    text-transform: capitalize;
+  }
+  
+  /* line 115, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .dropdown .dropdown-menu .dropdown-item:hover {
+    color: #bb00ff !important;
+  }
+  
+  /* line 122, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .dropdown:hover .dropdown-menu {
+    transform: scale(1);
+  }
+  
+  @media (max-width: 991px) {
+    /* line 132, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .single_page_menu .navbar-collapse ul li .nav-link {
+      color: #000 !important;
+    }
+    /* line 140, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .navbar {
+      padding: 15px 0;
+    }
+    /* line 144, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+      padding: 0;
+    }
+    /* line 147, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .navbar-light .navbar-toggler span {
+      color: #fff;
+      font-size: 25px;
+    }
+    /* line 153, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .navbar-collapse {
+      z-index: 9999 !important;
+      position: absolute;
+      left: 0;
+      top: 62px;
+      width: 100%;
+      background-color: #fff;
+      text-align: center !important;
+      box-shadow: 0px 11px 9px -5px rgba(0, 0, 0, 0.2);
+    }
+    /* line 164, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .main-menu-item {
+      text-align: left !important;
+    }
+    /* line 167, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .main-menu-item .nav-item {
+      padding: 5px 15px !important;
+    }
+    /* line 170, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .main_menu .main-menu-item .nav-item a {
+      padding: 10px 15px !important;
+      color: #000 !important;
+    }
+    /* line 177, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .navbar-nav {
+      align-items: start !important;
+      padding: 10px 0;
+    }
+    /* line 183, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      margin-top: 10px;
+    }
+    /* line 190, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+      color:#bb00ff;
+    }
+    /* line 197, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .dropdown .dropdown-item:hover {
+      color:#bb00ff !important;
+    }
+  }
+  
+  /* line 316, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .single_page_menu .main-menu-item ul li .nav-link {
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 24px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 316, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+    .single_page_menu .main-menu-item ul li .nav-link {
+      padding: 0px 16px;
+    }
+  }
+  
+  /* line 332, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .menu_fixed {
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    background-color: #8d00ff;
+    top: 0;
+  }
+  
+  /* line 339, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .menu_fixed .logo_2 {
+    display: inherit;
+  }
+  
+  /* line 343, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .menu_fixed .logo_1 {
+    display: none;
+  }
+  
+  /* line 349, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_menu.scss */
+  .menu_fixed .main-menu-item ul li .nav-link {
+    color: #fff;
+  }
+  
+  /**************** banner part css start ****************/
+  /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part {
+    height: 950px;
+    position: relative;
+    background-image: url(images/banner_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part {
+      height: 700px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part {
+      height: 750px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part {
+      height: 750px;
+    }
+  }
+  
+  /* line 21, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text {
+    display: table;
+    width: 100%;
+    height: 950px;
+    margin-top: -112px;
+  }
+  
+  /* line 26, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text .banner_text_iner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 21, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text {
+      text-align: center;
+      padding-top: 0px;
+      height: 700px;
+      margin-top: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 21, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text {
+      height: 750px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 21, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text {
+      height: 750px;
+    }
+  }
+  
+  /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 85px;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+  }
+  
+  /* line 77, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text h1 span {
+    color: #8d00ff;
+  }
+  
+  /* line 82, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text p {
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+    padding: 0 70px;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 82, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text p {
+      padding: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 82, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text p {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+  
+  /* line 99, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_text .btn_2 {
+    margin-top: 52px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 99, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text .btn_2 {
+      margin-top: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* line 99, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_text .btn_2 {
+      margin-top: 20px;
+    }
+  }
+  
+  /* line 111, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_video {
+    position: absolute;
+    bottom: -245px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 111, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_video {
+      position: relative;
+      bottom: 180px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* line 111, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+    .banner_part .banner_video {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* line 127, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_video .banner_video_iner {
+    position: relative;
+  }
+  
+  /* line 129, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_video .banner_video_iner .extends_video {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+  }
+  
+  /* line 135, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_banner.scss */
+  .banner_part .banner_video .banner_video_iner .extends_video #play-video_1 {
+    width: 69px;
+    height: 50px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+
+.about-area {
+   
+    background-image: url(images/2032.jpg);
+    width: 100%;
+    height: auto;
+   
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+
+    
+  
+  }
+  
+.btn-grad {
+ 
+    background-image: linear-gradient(to right, rgb(226, 116, 73) 0%, #f080a5 51%, rgb(221, 112, 69) 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+    height:48px;
+    border-radius:24px;
+    margin:-2px auto;
+    padding:6px 24px 2px;
+    display:block;
+    color: white;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-family: "Museo Sans", Helvetica, Arial;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size:12px;
+    text-align: center;
+    width: 120px;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  .s6{
+      width:100%;
+      height:auto;
+      margin-top:50px;
+  }
+  .s7{
+      margin-top:-44px;
+  }
+  .s8{
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:50%;
+      margin-top:40px;
+  }
+  *,
+  *::before,
+  *::after {
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+   box-sizing: inherit; 
+  }
+  
+  html,
+  body {
+   background-color: #fff;
+   color: #111; 
+   height: 100%; 
+  }
+  
+  body {
+   font: 100%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Verdana, sans-serif;
+   box-sizing: border-box;
+  }
+  
+  img {
+   max-width: 100%; 
+  }
+  
+  .s9 {
+   margin: 0 auto;
+  }
+  
+  .s9 {
+   max-width: 60em;
+   margin-top: 45px;
+   /* can't have:
+   overflow: hidden; */
+  }
+  
+  .gallery {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 2em 0;
+  }
+  
+  .gallery_item {
+   width: 32%; 
+   margin-bottom: .25em;
+  }
+  
+  .gallery_link {
+   text-decoration: none;
+   display: flex;
+   position: relative;
+   height: 0;
+   padding-bottom: 100%; 
+  }
+  
+  .thumbnail {
+   position: absolute;
+   top:0;right:0;bottom:0;left:0;
+   transition: all .3s;
+  }
+  
+  .gallery_link:hover .thumbnail {
+   max-width: 120%;
+   left: -10%;
+   top: -10%;
+   z-index: 1; 
+  }
+  section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+.contact-info {
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+}
+.contact-info-icon {
+margin-bottom: 15px;
+}
+.contact-info-item {
+background: #071c34;
+padding: 30px 0px;
+}
+.contact-page-sec .contact-page-form h2 {
+color: #071c34;
+text-transform: capitalize;
+font-size: 22px;
+font-weight: 700;
+}
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+padding-left: 0;
+}  
+.contact-page-form.contact-form input {
+margin-bottom: 5px;
+}  
+.contact-page-form.contact-form textarea {
+height: 110px;
+}
+.contact-page-form.contact-form input[type="submit"] {
+background: #071c34;
+width: 150px;
+border-color: #071c34;
+}
+.contact-info-icon i {
+font-size: 48px;
+color: #fda40b;
+}
+.contact-info-text p{margin-bottom:0px;}
+.contact-info-text h2 {
+color: #fff;
+font-size: 22px;
+text-transform: capitalize;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.contact-info-text span {
+color: #999999;
+font-size: 16px;
+display: inline-block;
+width: 100%;
+}
+
+.contact-page-form input {
+background: #f9f9f9 none repeat scroll 0 0;
+border: 1px solid #f9f9f9;
+margin-bottom: 20px;
+padding: 12px 16px;
+width: 100%;
+border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+display: inline-block;
+width: 100%;
+padding-left: 0;
+}
+.single-input-field textarea {
+background: #f9f9f9 none repeat scroll 0 0;
+border: 1px solid #f9f9f9;
+width: 100%;
+height: 120px;
+padding: 12px 16px;
+border-radius: 4px;
+}
+.single-input-fieldsbtn input[type="submit"] {
+background: #7d14e0 none repeat scroll 0 0;
+color: #fff;
+display: inline-block;
+font-weight: 600;
+padding: 10px 0;
+text-transform: capitalize;
+width: 150px;
+margin-top: 20px;
+font-size: 16px;
+}
+.single-input-fieldsbtn input[type="submit"]:hover{background:#071c34;transition: all 0.4s ease-in-out 0s;border-color:#071c34}
+.single-input-field  h4 {
+color: #464646;
+text-transform: capitalize;
+font-size: 14px;
+}
+.contact-page-form {
+display: inline-block;
+width: 100%;
+margin-top: 30px;
+}
+
+.contact-page-map {
+margin-top: 36px;
+}
+.contact-page-form form {
+padding: 20px 15px 0;
+}
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  will-change: transform, opacity;
+
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+
+  -webkit-transition: -webkit-transform 0.1s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal-container.visible {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+  -webkit-transition: -webkit-transform 0.3s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  padding: 40px;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: white;
+}
+
+.modal:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.close-modal {
+  top: 5px;
+  right: 5px;
+  position: absolute;
+}
+/* Hiding and showing the popup div */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+	  font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+	.active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+	.carousel-inner .next        { left:  33%; }
+	.carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		     { left: -25%; }
+  .carousel-col                { width: 25%; }
+	.active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+	.active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+	width: 306px;
+	height: 230px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
+
+.a{
+    margin-top:152px;
+}
+
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 157px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    height:302px;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    margin-top:46px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+  .s12{
+      margin-top:12px;
+      margin-left:10px;
+      }
+      .column78{
+          float:left;
+          width:25%;
+          padding:5px;
+          margin-top:34px;
+      }
+      .row::after{
+          content:"";
+          clear:both;
+          display:table;
+      }
+      
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+.j{
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: strecth;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px;
+
+      
+    
+    
+    
+    
+  }
+  .card {
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 5px solid transparent;
+    background: #fff;
+    background-clip: padding-box;
+  }
+  .cards .card {
+    flex: 0 1 100%;
+    min-height: 600px;
+  }
+  @media (min-width: 960px) {
+    .cards .card {
+      flex-basis: 50%;
+    }
+  }
+  @media (min-width: 1210px) {
+    .cards .card {
+      flex-basis: 33.33333%;
+    }
+  }
+  .card__img {
+    flex-grow: 1;
+    min-height: 100px;
+    background: #f5f5f5 no-repeat center center / cover;
+  }
+  .card__info {
+    padding: 20px 20px 30px;
+  }
+  .card__subtitle {
+    margin: 0 0 10px;
+  }
+  .card__text {
+    margin: 0 0 20px;
+  }
+.ima{
+    height:330px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+section {
+    padding: 60px 0;
+   /* min-height: 100vh;*/
+}
+
+
+
+.main-footer{
+position:relative;
+padding:110px 0px 0px;
+background-color: #f4f5f7;
+background-repeat:repeat-x;
+background-position:right bottom;
+}
+
+.main-footer .footer-widget{
+position:relative;
+margin-bottom:40px;
+}
+
+.main-footer .widgets-section{
+position:relative;
+padding-bottom:60px;
+}
+
+.main-footer .footer-widget h2{
+position:relative;
+font-size:22px;
+font-weight:600;
+color:#161c42;
+line-height:1.2em;
+margin-bottom:30px;
+margin-top:25px;
+text-transform:capitalize;
+}
+
+.main-footer .about-widget{
+position:relative;
+}
+
+.main-footer .about-widget .logo {
+position: relative;
+margin-bottom: 15px;
+width: 210px;
+}
+.main-footer .about-widget .text{
+position:relative;
+}
+
+.main-footer .about-widget .text p{
+position:relative;
+color:#8a8d91;
+font-size:15px;
+line-height:1.7em;
+margin-bottom:20px;
+}
+
+.main-footer .about-widget .text p:last-child{
+margin-bottom:0px;
+}
+
+/* Footer List */
+
+.main-footer .footer-list{
+position:relative;
+}
+
+.main-footer .footer-list li{
+position:relative;
+margin-bottom:17px;
+}
+
+.main-footer .footer-list li a{
+position:relative;
+color:#8a8d91;
+font-size:15px;
+padding-left:15px;
+-webkit-transition:all 300ms ease;
+-ms-transition:all 300ms ease;
+-o-transition:all 300ms ease;
+-moz-transition:all 300ms ease;
+transition:all 300ms ease;
+}
+
+.main-footer .footer-list li a:hover{
+text-decoration:underline;
+color:#ff6666;
+}
+
+.main-footer .footer-list li a:before{
+position:absolute;
+content:'\f105';
+left:0px;
+top:0px;
+color:#8a8d91;
+font-weight:800;
+font-family: 'Font Awesome 5 Free';
+}
+
+/*Gallery Widget*/
+
+.main-footer .gallery-widget{
+position:relative;
+max-width:350px;
+}
+
+.main-footer .gallery-widget .images-outer{
+position:relative;
+margin:0px -3px;
+}
+
+.main-footer .gallery-widget .image-box{
+position:relative;
+float:left;
+width:33.333%;
+padding:0px 5px;
+margin-bottom:10px;
+}
+
+.main-footer .gallery-widget .image-box img{
+position:relative;
+display:block;
+width:100%;
+border-radius:4px;
+-webkit-transition:all 300ms ease;
+-ms-transition:all 300ms ease;
+-o-transition:all 300ms ease;
+-moz-transition:all 300ms ease;
+transition:all 300ms ease;
+}
+
+.main-footer .gallery-widget .image-box img:hover{
+opacity:0.70;   
+}
+
+/* Info List */
+
+.main-footer .info-list{
+position:relative;
+}
+
+.main-footer .info-list li{
+position:relative;
+color:#8a8d91;
+font-size:15px;
+line-height:1.8em;
+margin-bottom:12px;
+}
+
+.main-footer .info-widget .social-links{
+position:relative;
+float:left;
+padding:15px 0px;
+}
+
+.main-footer .info-widget .social-links li{
+position:relative;
+margin-right:8px;
+display:inline-block;
+}
+
+.main-footer .info-widget .social-links li:last-child{
+margin-right:0px;
+}
+
+.main-footer .info-widget .social-links li a{
+position:relative;
+color: #ffffff;
+width:50px;
+height:50px;
+line-height:50px;
+text-align:center;
+border-radius:50%;
+display:inline-block;
+-webkit-transition:all 300ms ease;
+-moz-transition:all 300ms ease;
+-ms-transition:all 300ms ease;
+-o-transition:all 300ms ease;
+transition:all 300ms ease;
+}
+
+.main-footer .info-widget .social-links li.google a{
+background-color:#dd4b39;
+}
+
+.main-footer .info-widget .social-links li.facebook a{
+background-color:#4a6fbe;
+}
+
+.main-footer .info-widget .social-links li.twitter a{
+background-color:#55acee;
+}
+
+.main-footer .info-widget .social-links li.instagram a{
+background-color:#ea4c89;
+}
+
+.main-footer .info-widget .social-links li.vimeo a{
+background-color:#1ab7ea;
+}
+
+.main-footer .footer-bottom{
+position:relative;
+padding:20px 0px;
+border-top:1px solid #e5e5e5;
+}
+
+.main-footer .footer-bottom .footer-nav{
+position:relative;
+text-align:right;
+}
+
+.main-footer .footer-bottom .footer-nav li{
+position:relative;
+padding-right:10px;
+margin-right:10px;
+line-height:1.1em;
+display:inline-block;
+border-right:1px solid #8a8d91;
+}
+
+.main-footer .footer-bottom .footer-nav li:last-child{
+padding-right:0px;
+margin-right:0px;
+border-right:none;
+}
+
+.main-footer .footer-bottom .footer-nav li a{
+position:relative;
+color:#8a8d91;
+font-size:15px;
+-webkit-transition:all 300ms ease;
+-moz-transition:all 300ms ease;
+-ms-transition:all 300ms ease;
+-o-transition:all 300ms ease;
+transition:all 300ms ease;
+}
+
+.main-footer .footer-bottom .footer-nav li a:hover{
+color:#ff6666;
+text-decoration:underline;
+}
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 768px){
+.nav div.main_list ul li a {
+    text-align: center;
+    width: 100%;
+  
+    padding: 0px;
+}
+}
+:root {
+	--link-size: 64px; 
+	--trans-props: all 0.3s ease;
+}
+
+
+.wrapper {
+	width: 100%;
+	height: 36vh;
+}
+
+.wrapper,
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+
+
+/*** Containers and icons ***/
+
+.social-icon {
+	display: flex;
+	
+	position: relative;
+	overflow: hidden; /* Trim branded overlays */ 
+	
+	width: var(--link-size);
+	height: var(--link-size);
+	margin: 8px;
+	
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+	
+	text-decoration: none;
+	
+	transition: var(--trans-props);
+}
+
+.social-icon i {
+	margin: auto; /* Perfect centering thanks to parental flex */
+	
+	font-size: 24px;
+	color: hsl(212,16%,48%);
+	
+	z-index: 1; /* Make sure icons will be on top */
+	
+	transition: var(--trans-props);
+}
+
+
+
+/*** Branded overlays from the bottom ***/
+
+.social-icon:after {
+	content: "";
+	
+	width: var(--link-size);
+	height: var(--link-size);
+	
+	position: absolute;
+	
+	transform: translate(0, var(--link-size));
+	
+	border-radius: 50%;
+	transition: var(--trans-props);
+}
+
+.social-icon.twitter:after {
+	background-color: #1da1f2;
+}
+
+.social-icon.github:after {
+	background-color: #24292e;
+}
+
+.social-icon.dribbble:after {
+	background-color: #ea4c89;
+}
+
+.social-icon.instagram:after {
+	background-color: #5851db;
+}
+
+.social-icon.behance:after {
+	background-color: #1769ff;
+}
+
+.social-icon.medium:after {
+	background-color: #00ab6c;
+}
+
+
+
+/*** Animations ***/
+
+.social-icon:hover {
+	transform: translateY(-4px);
+	box-shadow: 0px 4px 12px rgba(0,0,0,0.16);
+}
+
+.social-icon:hover i {
+	transform: scale(1.1);
+	color: #fff;
+}
+
+.social-icon:hover:after {
+	transform: translate(0) scale(1.2);
+}
+.s19{
+    text-align: center;
+}
+.logo {
+  float: left;
+  width: auto;
+  height: auto;
+  padding-left: 3rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4.3rem;
+}
+
+.logo a:hover {
+  color: #00E676;
+}
+.navbar-light .navbar-brand {
+  color: rgb(255, 255,255);
+}
+.ti-menu:before {
+	content: "\e68e";
+}
+.ti-menu-alt:before {
+	content: "\e68f";
+}
+/* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part {
+  padding: 268px 0px 140px;
+}
+
+@media (max-width: 991px) {
+  /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part {
+    padding: 110px 0px 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part {
+    padding: 200px 0px 80px;
+  }
+}
+
+/* line 13, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .mt_60 {
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 17, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text {
+    margin-top: 25px;
+  }
+}
+
+/* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 {
+  font-size: 36px;
+  margin-bottom: 34px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+/* line 30, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 span {
+  color: #8d00ff;
+}
+
+@media (max-width: 991px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text h2 {
+    font-size: 31px;
+    margin: 20px 0 15px;
+  }
+}
+
+/* line 45, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 span {
+  font-weight: 400;
+}
+
+/* line 51, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text p {
+  margin-bottom: 15px;
+}
+
+/* line 55, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text .btn_3 {
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  /* line 55, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text .btn_3 {
+    margin-top: 10px;
+  }
+}
+
+/* line 67, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: #fafafa;
+  position: relative;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  /* line 67, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .single_service_text {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 67, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .single_service_text {
+    margin-top: 15px;
+  }
+}
+
+/* line 84, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8d00ff;
+  font-weight: 700;
+  margin-top: 23px;
+  display: inline-block;
+}
+
+/* line 93, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text i {
+  font-size: 27px;
+  color: #8d00ff;
+}
+
+/* line 98, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 8px 0 20px;
+}
+
+@media (max-width: 991px) {
+  /* line 109, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .single_service_text p {
+    padding-top: 15px;
+  }
+}
+
+/* line 117, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text:hover {
+  background-image: -moz-linear-gradient(-66deg, #7f00ff 0%, #e100ff 100%);
+  background-image: -webkit-linear-gradient(-66deg, #7f00ff 0%, #e100ff 100%);
+  background-image: -ms-linear-gradient(-66deg, #7f00ff 0%, #e100ff 100%);
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 126, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text:hover a,
+.service_part .single_service_text:hover i,
+.service_part .single_service_text:hover h4,
+.service_part .single_service_text:hover p {
+  color: #fff;
+}
+
+/* line 134, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text:hover {
+  background-position: right;
+  color: #fff !important;
+}
+
+/* line 143, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_part_iner .col-lg-6:first-child {
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 143, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_part_iner .col-lg-6:first-child {
+    margin-top: 0;
+  }
+}
+
+/* line 153, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_part_iner .col-lg-6:last-child {
+  margin-top: -60px;
+}
+
+@media (max-width: 991px) {
+  /* line 153, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_part_iner .col-lg-6:last-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 167, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .mt_30 {
+    margin-top: 30px;
+  }
+}
+
+/* line 174, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.single_page_service {
+  padding: 180px 0 116px;
+}
+
+@media (max-width: 991px) {
+  /* line 174, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .single_page_service {
+    padding: 70px 0 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 174, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .single_page_service {
+    padding: 75px 0 50px;
+  }
+}
+
+/* line 185, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.single_page_service .btn_1 {
+  background-color: #8d00ff;
+  color: #fff;
+}
+
+/* line 189, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.single_page_service .btn_1:hover {
+  color: #f5790b;
+}
+
+/************Team css start***************/
+/* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us {
+  position: relative;
+  z-index: 99;
+}
+
+/* line 6, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_img {
+  background-image: url(../img/about_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 6, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_img {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+/* line 20, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_img img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text {
+  padding-left: 40px;
+}
+
+@media (max-width: 576px) {
+  /* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 27, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text {
+    padding-left: 40px;
+  }
+}
+
+/* line 44, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text h5 {
+  font-weight: 700;
+  font-size: 24px;
+  border-left: 5px solid #8d00ff;
+  padding-left: 20px;
+}
+
+/* line 49, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text h5 span {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* line 56, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 65px 0 28px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  /* line 56, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 56, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text h2 {
+    font-size: 28px !important;
+    line-height: 40px;
+    margin: 15px 0 10px !important;
+  }
+}
+
+/* line 74, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text p {
+  line-height: 1.929;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 576px) {
+  /* line 74, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 74, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 74, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text p {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 89, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  /* line 89, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text ul {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 89, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text ul {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 89, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text ul {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 109, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-right: 33px;
+  padding-top: 12px;
+  color: #060606;
+  width: 50%;
+
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  padding-left: 29px;
+}
+
+@media (max-width: 991px) {
+  /* line 109, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text ul li {
+    padding-top: 5px;
+    padding-right: 15px;
+  }
+}
+
+/* line 127, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text ul li span {
+  margin-right: 10px;
+  color: #8d00ff;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 127, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+  .about_us .about_us_text ul li span {
+    top: 10px;
+  }
+}
+
+/* line 141, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_about.scss */
+.about_us .about_us_text .btn_2 {
+  margin-top: 13px;
+}
+@media (max-width: 991px){
+.service_part .service_text h2 {
+    font-size: 39px;
+    margin-bottom: -39px;
+    line-height: 138px;
+}
+}
+.service_part .service_text p {
+  font-size:15px;
+}
+p{
+  font-size:12px;
+}
+
+.hello1{
+  margin-left:-67px;
+}
+.l1{
+   font-size:54px;
+}
+p {
+  font-size: 13px;
+}
+.btn_2:hover, .btn_3 {
+  background-image: -webkit-linear-gradient(right, #7f00ff 0%, #e100ff 50%, #7f00ff 100%);
+  background-image: linear-gradient(to left, #7f00ff 0%, #e100ff 50%, #7f00ff 100%);
+}
+.btn_2 {
+  display: inline-block;
+  padding: 13.5px 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #8d00ff;
+  background-color: #fff;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border: 1px solid #8d00ff;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-size: 200% auto;
+  
+}
+
+/* line 64, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_button.scss */
+.btn_2:hover {
+  color: #fff;
+  border: 1px solid transparent;
+  background-position: right;
+}
+
+/* line 80, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_button.scss */
+.btn_3 {
+  margin-left:43%;
+  display: inline-block;
+  padding: 13.5px 0;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border: 1px solid #8d00ff;
+  border-radius: 2px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-size: 200% auto;
+}
+
+/* line 98, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_button.scss */
+.btn_3:hover {
+  background-position: right;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  color: #fff !important;
+}
+.btn-grad2 {
+  height:48px;
+  margin:-2px auto;
+  padding:6px 24px 2px;
+  display:block;
+  text-transform:uppercase;
+  text-decoration: none;
+  font-family: "Museo Sans", Helvetica, Arial;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  font-size:12px;
+  text-align: center;
+  width: 180px;
+  margin-bottom:30px;
+}
+.intro_video_bg {
+  background-image: url("images/intro_video_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* line 11, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+.intro_video_bg:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: -moz-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
+  background-image: -webkit-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
+  background-image: -ms-linear-gradient(-89deg, #9300ff 0%, #d500ff 100%);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+.intro_video_bg h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+.intro_video_bg p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 53px;
+  padding: 0 116px;
+}
+
+@media (max-width: 991px) {
+  /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg p {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 46, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_intro_video_bg.scss */
+  .intro_video_bg p {
+    padding: 0;
+  }
+}
+.intro_video_bg{
+  margin-top:112px;
+  
+}
+section {
+  min-height: 70vh;
+}
+.tz-gallery{
+  padding: 100px;
+  margin-top:-270px;
+}
+.j1{
+  margin-top:-57px;
+  font-size: 54px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s7{
+  margin-top:-129px;
+}
+.j2{
+  margin-top:30px;
+  font-size:54px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.j3{
+  margin-top:30px;
+  font-size:54px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tz-gallery {
+  padding: 137px;
+  margin-top: -302px;
+}
+.j4{
+  margin-top:-300px;
+}
+.intro_video_bg{
+  z-index: -10;
+}
+.k1{
+  z-index: 0;
+}
+.j6{
+  z-index: -10;
+}
+.s7 {
+  margin-top: -278px;
+}
+.f1{
+  width: 30%;
+  height: 47px;
+  padding:23px;
+}
+.contact-info-item {
+  background: #8d00ff;
+  padding: 30px 0px;
+}
+.contact-info-icon i {
+  font-size: 48px;
+  color: #ffffff;
+}
+.contact-info-text span {
+  color: #ffffff;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+}
+.menu_fixed{
+  height:57px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.3rem;
+  margin-top:-21px;
+}
+.nav-item{
+  margin-top:-11px;
+}
