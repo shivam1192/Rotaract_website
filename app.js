@@ -57,13 +57,13 @@ app.get("/name",function(req,res){
       
       rcoy.find({},function(err,text){
             var t=text.length;
-
+            var sum=0;
 
             if(err){
                   console.log("erroe is there");
             }
             else{
-                  res.render("name.ejs",{te:text,tep:t});
+                  res.render("name.ejs",{te:text,tep:t,sum:sum});
             }
       });
 });

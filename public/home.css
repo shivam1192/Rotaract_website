@@ -2230,3 +2230,11 @@ section {
 .nav-item{
   margin-top:-11px;
 }
+.menu_fixed {
+  height: 62px;
+}
+@media (max-width: 991px){
+.main_menu .navbar {
+    padding: 21px 0;
+}
+}
